@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #ffff;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 10vh 80vh 10vh;
+  grid-template-areas: "h h" "m a" "f f";
+}
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #ffff;
+  text-align: center;
+}
+header {
+  background: #7259C2;
+  grid-area: h;
+}
+
+main {
+  background: #A69BCC;
+  grid-area: m;
+}
+
+aside {
+  background: #54428F;
+  grid-area: a;
+}
+
+footer {
+  background: #363242;
+  grid-area: f;
+}
